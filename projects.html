@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Oussama's Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .section-title h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            font-size: 1.3rem; /* Made the paragraph text slightly bigger */
+            margin-bottom: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            padding: 0 40px;
+        }
+
+        .project-card {
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .project-card img, .project-card video {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .project-card p {
+            font-size: 1.2rem; /* Increased paragraph size */
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            background-color: #ff6b6b;
+            color: #fff;
+            border-radius: 30px;
+            border: none;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #ff4040;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff4040;
+        }
+    </style>
+        <link rel="icon" href="icons8-berserk-48.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="exp.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <div class="section-title">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on, showcasing my skills in cybersecurity, scripting, and software development.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="bruteforce.png" alt="Bruteforce Passwords">
+                <h3>Bruteforce Passwords</h3>
+                <p>A batch script for automating password attempts on network resources, designed to test password strength and security measures.</p>
+                <a href="https://github.com/OussamaMahmoudiCybersec/BruteForce-Passwords" class="btn" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <video src="multitool.mp4" controls></video>
+                <h3>Oussama's Multitool</h3>
+                <p>A multi-functional tool offering five batch utilities for various purposes, including system automation and security testing.</p>
+                <a href="https://github.com/OussamaMahmoudiCybersec/Oussama-Multitool" class="btn" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="honeypot.png" alt="SSH Honeypot">
+                <h3>SSH Honeypot</h3>
+                <p>A project designed to simulate a vulnerable SSH server, helping to capture malicious activity and better understand attack vectors.</p>
+                <a href="https://github.com/OussamaMahmoudiCybersec/SSH-HoneyPot" class="btn" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <video src="Mlaware.mp4" controls></video>
+                <h3>Malware Analysis Tool</h3>
+                <p>A tool created for analyzing and reverse engineering malware to better understand malicious code.</p>
+                <a href="https://github.com/OussamaMahmoudiCybersec/MalwareAnalysisTool" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
