@@ -1,39 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="icons8-berserk-48.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oussama's Portfolio</title>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo"></a>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/japan.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/japan.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="./assets/sleepy-cute.gif" alt="Oussama Mahmoudi Logo" style="width: 350px; height: auto; margin-top: 30px">
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Oussama Mahmoudi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
 
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="projects.html" >Projects</a>
-            <a href="exp.html" >Experience</a>
-            <a href="contact.html" >Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="Leonardo_Anime_XL_red_and_black_hacker_male_black_short_hair_s_2.jpg" alt="">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Oussama Mahmoudi</h1>
+        <p class="section__text__p2">Pentester, Cloud & Data Security Specialist        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Oussama</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I am a Cybersecurity Enthusiast and Computer Science Student with a passion for Penetration Testing, Cloud Security, and Vulnerability Assessment.            </p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/oussamamahmoudicybersec/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/OussamaMahmoudiCybersec/"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <a href="https://www.linkedin.com/in/oussamamahmoudicybersec/" class="btn">Hire me</a>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/oussamamahmoudicybersec/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/OussamaMahmoudiCybersec/'"
+          />
         </div>
+      </div>
     </section>
-</body>
-</html>
+
+    
+    <section id="about" style="text-align: center; color: #f9f9f9;">
+      <p class="section__text__p1" style="font-size: 1.2em; color: #ccc;">✨ Get To Know More ✨</p>
+      <h1 class="title" style="font-size: 2.5em; color: #fff;">About Me</h1>
+      <div class="section-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+    
+        <div class="about-details-container" style="flex: 1; min-width: 300px; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px;">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" style="width: 50px; height: 50px;"/>
+            <h3>🛡️ Experience</h3>
+            <br>
+            <div style="margin-bottom: 20px;">
+              <h4 style="color: hsl(48, 100%, 83%);">IT Security Intern</h4>
+              <p><strong style="color: #6af171;">STAR ASSURANCES</strong> (Jan - Mar 2024)</p>
+              <p>Deployed firewalls and antivirus solutions to strengthen network security, ensuring the protection of critical data.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <h4 style="color: hsl(48, 100%, 83%);">Surveillance Room Intern</h4>
+              <p><strong style="color: #ff9100;">Orange Tunisie</strong> (Jan - Feb 2023)</p>
+              <p>Oversaw network monitoring and supported the security team in safeguarding infrastructure operations.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="about-details-container" style="flex: 1; min-width: 300px; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px;">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" style="width: 50px; height: 50px;"/>
+            <h3>📚 Education</h3>
+            <br>
+            <div style="margin-bottom: 20px;">
+              <h4 style="color: hsl(48, 100%, 83%);">Cloud Computing and Data Security</h4>
+              <p><strong style="color: #008cff;">Université Centrale Tunisie</strong> (2022 - 2025)</p>
+              <p>Focused on cloud architecture and security, with hands-on experience in cloud platforms, encryption, and risk management.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <h4 style="color: hsl(48, 100%, 83%);">Preparatory Class (Math and Physics)</h4>
+              <p><strong style="color: #008cff;">Université Centrale Tunisie</strong> (2020 - 2022)</p>
+              <p>Completed intensive courses in advanced math and physics, building a foundation for computer science and cryptography.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" style="width: 30px; height: 30px; margin-top: 20px; cursor: pointer;" onclick="location.href='./#experience'"/>
+    </section>
+    
+    
+    
+
+ <section id="experience"  style="text-align: center; padding: 40px; background-color: #1a1b26; color: #f8f8f2;">
+  <h1 class="title" style="font-size: 2.5em; color: #ffffff;">💪 My Skills 💪</h1>
+  <div class="experience-details-container" style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
+
+    <div class="about-containers" style="max-width: 1000px; width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around;">
+      <div class="details-container" style="flex: 1; min-width: 250px; max-width: 450px; background-color: #282a36; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; margin: 10px;">
+        <h2 class="experience-sub-title" style="font-size: 1.8em; color: #ff79c6;">🧰 Tools & Technologies</h2>
+        <div class="article-container" style="display: flex; flex-wrap: wrap; gap: 15px;">
+
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🐍</span>
+            <div style="margin-left: 10px;">
+              <h3>Python</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🐚</span>
+            <div style="margin-left: 10px;">
+              <h3>Bash</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🧪</span>
+            <div style="margin-left: 10px;">
+              <h3>Metasploit</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🛡️</span>
+            <div style="margin-left: 10px;">
+              <h3>Burp Suite</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🔍</span>
+            <div style="margin-left: 10px;">
+              <h3>Nmap</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">📶</span>
+            <div style="margin-left: 10px;">
+              <h3>Wireshark</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🐧</span>
+            <div style="margin-left: 10px;">
+              <h3>Kali Linux</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">💻</span>
+            <div style="margin-left: 10px;">
+              <h3>VirtualBox</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🐋</span>
+            <div style="margin-left: 10px;">
+              <h3>Docker</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🐙</span>
+            <div style="margin-left: 10px;">
+              <h3>GitHub</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🔧</span>
+            <div style="margin-left: 10px;">
+              <h3>Git</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container" style="flex: 1; min-width: 250px; max-width: 450px; background-color: #282a36; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; margin: 10px;">
+        <h2 class="experience-sub-title" style="font-size: 1.8em; color: #ff79c6;">👾 More Tools</h2>
+        <div class="article-container" style="display: flex; flex-wrap: wrap; gap: 15px;">
+
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">📜</span>
+            <div style="margin-left: 10px;">
+              <h3>Markdown</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🌐</span>
+            <div style="margin-left: 10px;">
+              <h3>HTML5</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">🎨</span>
+            <div style="margin-left: 10px;">
+              <h3>CSS3</h3>
+            </div>
+          </article>
+          <article style="display: flex; align-items: center; background-color: #44475a; border-radius: 8px; padding: 10px; width: calc(50% - 10px);">
+            <span class="icon" style="font-size: 1.5em;">📜</span>
+            <div style="margin-left: 10px;">
+              <h3>JavaScript</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" style="width: 30px; height: 30px; margin-top: 20px; cursor: pointer;" onclick="location.href='./#projects'"/>
+</section>
+
+    
+<br><br>
+<br><br>
+<br><br>
+
+
+
+<section id="projects" style="padding: 40px;">
+  <p class="section__text__p1" style="text-align: center; font-size: 18px; margin-bottom: 10px;">Browse My Recent</p>
+  <h1 class="title" style="text-align: center; font-size: 36px; margin: 0;">Projects</h1>
+  
+  <div class="experience-details-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div class="about-containers" style="flex: 1 1 48%; margin-bottom: 20px; display: flex; flex-direction: column;">
+      <div class="details-container" style="flex: 1; background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); max-width: 350px; margin: auto;">
+        <h2 class="experience-sub-title project-title" style="font-size: 24px; margin-top: 0;">🔒 Bruteforce Passwords</h2>
+        <p>A script to automate password attempts for testing security.</p>
+        <div class="btn-container">
+          <button class="btn project-btn" style="background-color: #ffb86c; color: #282a36; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-top: 10px;" onclick="location.href='https://github.com/OussamaMahmoudiCybersec/BruteForce-Passwords'">View on GitHub</button>
+        </div>
+      </div>
+      
+      <div class="details-container" style="flex: 1; background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); max-width: 350px; margin: auto; margin-top: 20px;">
+        <h2 class="experience-sub-title project-title" style="font-size: 24px; margin-top: 0;">🛠️ Oussama's Multitool</h2>
+        <p>A multifunctional tool offering batch utilities for various tasks.</p>
+        <div class="btn-container">
+          <button class="btn project-btn" style="background-color: #ffb86c; color: #282a36; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-top: 10px;" onclick="location.href='https://github.com/OussamaMahmoudiCybersec/Oussama-Multitool'">View on GitHub</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="about-containers" style="flex: 1 1 48%; margin-bottom: 20px; display: flex; flex-direction: column;">
+      <div class="details-container" style="flex: 1; background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); max-width: 350px; margin: auto;">
+        <h2 class="experience-sub-title project-title" style="font-size: 24px; margin-top: 0;">🔑 SSH Honeypot</h2>
+        <p>A project simulating a vulnerable SSH server to capture attacks.</p>
+        <div class="btn-container">
+          <button class="btn project-btn" style="background-color: #ffb86c; color: #282a36; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-top: 10px;" onclick="location.href='https://github.com/OussamaMahmoudiCybersec/SSH-HoneyPot'">View on GitHub</button>
+        </div>
+      </div>
+      
+      <div class="details-container" style="flex: 1; background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); max-width: 350px; margin: auto; margin-top: 20px;">
+        <h2 class="experience-sub-title project-title" style="font-size: 24px; margin-top: 0;">🦠 Malware Analysis Tool</h2>
+        <p>A tool for analyzing and reverse engineering malware.</p>
+        <div class="btn-container">
+          <button class="btn project-btn" style="background-color: #ffb86c; color: #282a36; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background 0.3s; margin-top: 10px;" onclick="location.href='https://github.com/OussamaMahmoudiCybersec/MalwareAnalysisTool'">View on GitHub</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" style="display: block; margin: 20px auto; cursor: pointer;" onclick="location.href='./#contact'" />
+</section>
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+    
+    
+    
+    
+
+
+
+
+<section id="contact" style="text-align: center; padding: 40px; position: relative;">
+  <p class="section__text__p1" style="color: #ffffff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);">Get in Touch</p>
+  <h1 class="title" style="color: #ff69b4; text-shadow: 0 0 15px rgba(255, 105, 180, 0.7); animation: glow 1.5s infinite alternate;">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+        style="width: 40px; height: 40px; animation: pulse 1.5s infinite;"
+      />
+      <p><a href="mailto:oussamamahmoudicybersec@outlook.com" style="color: #ffffff;">Email Me!</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+        style="width: 40px; height: 40px; animation: pulse 1.5s infinite;"
+      />
+      <p><a href="https://www.linkedin.com/oussamamahmoudicybersec" style="color: #ffffff;">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(255, 105, 180, 1), 0 0 30px rgba(255, 105, 180, 0.7);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+
+
+<footer style="text-align: center; padding: 0px 0;">
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 0px;">
+    <a href="https://github.com/OussamaMahmoudiCybersec/" target="_blank" style="margin: 0 0px;">
+      <img src="./assets/github.png" alt="GitHub icon" class="icon" style="width: 30px; height: 30px;"/>
+    </a>
+    <a href="https://www.linkedin.com/in/oussamamahmoudicybersec" target="_blank" style="margin: 0 15px;">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" style="width: 30px; height: 30px;"/>
+    </a>
+  </div>
+  <p style="margin-top: 10px;">Copyright &#169; 2024 Oussama Mahmoudi. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
